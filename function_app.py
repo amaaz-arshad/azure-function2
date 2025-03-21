@@ -36,7 +36,9 @@ def embed(req: func.HttpRequest) -> func.HttpResponse:
     # Wrap the vector in the desired JSON format
     response_data = {
         "data": [
-            {"embedding": embedding}
+            {
+                "embedding": embedding
+            }
         ]
     }
     
